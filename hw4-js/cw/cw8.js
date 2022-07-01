@@ -16,29 +16,63 @@
 //         Сумма чисел в диапазоне от индекса C по индекс D равна: 10
 //  -->
 
-function makeMassive(A, B) {
-  var arr = [];
-  if (A < B) {
-    for (i = A; i < B; i++) {
-      let randomNumber = Math.floor(Math.random() * 10);
-      arr.push(randomNumber);
-    }
-  } else console.log("cant make this arr");
-  return arr;
-}
-console.log(makeMassive(4, 14));
 
-function indexCount(makeMassive, index) {
-  for (i = 0; i < makeMassive[0]; i++) {
-    if (makeMassive[i] < 0) {
-      console.log("We dont have '-' numbers");
-    } else if (makeMassive[i] > index) {
-      console.log("This index is too much!");
-    }
-  }
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let res = indexCount(makeMassive(4, 14), 13);
-console.log(res);
+function doSmth(a , b , num) {
+    // if (a < b) {
+    //     let arr = [];
+    //     for (var i = 0; i < num; i++) {
+    //         var randomInt = getRandomInt(a, b);
+    //         arr.push(randomInt);
+    //     }
+    //     return arr; 
+    // } else {
+    //     alert("error");
+    // }
+   
+    // second solution 
+    if (a > b) {
+        alert("error");
+        return 
+    } 
+    let arr = [];
+    for (var i = 0; i < num; i++) {
+        var randomInt = getRandomInt(a, b);
+        arr.push(randomInt);
+    }
+    return arr; 
+    
+}
+// doSmth(10, 1, 5);
+// console.log(doSmth(1, 10, 5));
 
-/// ???
+function calculateSumBtwNumb(c, d, array) {
+    if (c < 0 || d < 0) {
+        alert("error");
+        return;
+    }
+    
+    if (d > array.length) {
+        alert("error");
+        return;
+    }
+
+    if (c > d) {
+        alert("error");
+        return;
+    }
+    var sum = 0;
+    for (var i = c; i < d; i++) {
+        sum = sum + array[i];
+    }
+    console.log(sum);
+}
+var targetArr = doSmth(1, 10, 5);
+console.log(targetArr);
+calculateSumBtwNumb(0, 4, targetArr);
+
