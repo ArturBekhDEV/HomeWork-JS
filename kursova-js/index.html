@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <title>Iphone_project</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">Top</button>
+    <div class="wrapper">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="#" />
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#" id="myBtn">Modal</a></li>
+          </ul>
+        </div>
+
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="p-content">Hello My name is Artur</p>
+            <p class="a-content">Im 28 years old</p>
+          </div>
+        </div>
+
+        <div class="sign-in-button">
+          <a href="#"><span>Sign In</span></a>
+        </div>
+        <div class="menu-icon-burger">
+          <img src="./img/icon-box.png" alt="#" />
+        </div>
+      </div>
+
+      <main class="main-block-content">
+        <div class="main-block-title">
+          <h1>iPhone 12</h1>
+        </div>
+        <div class="main-block-content-iphone">
+          <div class="main-block-image">
+            <img src="./img/iphone.png" alt="#" />
+          </div>
+          <div class="main-block-characher">
+            <ul>
+              <li>6,1 mm</li>
+              <li>Blue</li>
+              <li>128gb</li>
+              <li>1265$</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-block-content-line">
+          <hr />
+        </div>
+      </main>
+      <footer>
+        <div class="footer-block-content">
+          <div class="first-block-footer-content">
+            <ul>
+              <li>
+                <a href=""><span>Shop and Learn</span></a>
+              </li>
+              <li><a href="">Mac</a></li>
+              <li><a href="">iPad</a></li>
+              <li><a href="">iPhone</a></li>
+            </ul>
+          </div>
+          <div class="second-block-footer-content">
+            <ul>
+              <li>
+                <a href=""><span>Services</span></a>
+              </li>
+              <li><a href="">Apple Music</a></li>
+              <li><a href="">Apple TV+</a></li>
+              <li><a href="">Apple Fitness+</a></li>
+            </ul>
+          </div>
+          <div class="third-block-footer-content">
+            <ul>
+              <li>
+                <a href=""><span>Apple Store</span></a>
+              </li>
+              <li><a href="">Find Store</a></li>
+              <li><a href="">Genius Bar</a></li>
+              <li><a href="">Today at Apple</a></li>
+              <li><a href="">Apple Camp</a></li>
+              <li><a href="">Apple Store App</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="img-slider"
+                  src="./img/Thorny Passing.png"
+                  alt="#"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-slider"
+                  src="./img/Thorny Passing.png"
+                  alt="#"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-slider"
+                  src="./img/Thorny Passing.png"
+                  alt="#"
+                />
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="parallax-img">
+            <img class="thumbnail" src="./img/Thorny Passing.png" alt="image" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/js-modal.js"></script>
+    <script src="./js/js-btn-to-top.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/glider.js"></script>
+    <script src="./js/simpleParallax.js"></script>
+  </body>
+</html>
